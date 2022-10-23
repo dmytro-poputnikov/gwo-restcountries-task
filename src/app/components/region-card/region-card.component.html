@@ -1,0 +1,16 @@
+<div class="card rounded-lg overflow-hidden shadow-lg cursor-pointer relative">
+  <a class="card-content-wrapper" routerLink="/{{ name }}">
+    <div class="card-image-wrapper h-52 max-h-52 w-full">
+      <img
+        class="w-full h-full"
+        style="object-fit: fill"
+        src="{{ url }}"
+        alt="Sunset in the mountains"
+      />
+    </div>
+
+    <div class="card__text">
+      <div class="font-bold text-xl mb-2">{{ name | titlecase }}</div>
+    </div>
+  </a>
+</div>

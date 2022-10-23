@@ -1,0 +1,12 @@
+<div
+  class="region-list-wrapper flex gap-6 flex-wrap content-around justify-center"
+>
+  <ng-container *ngFor="let region of regions">
+    <app-region-card
+      name="{{ region.name }}"
+      url="{{ region.imageUrl }}"
+      class="w-full flex-initial sm:w-64"
+    >
+    </app-region-card>
+  </ng-container>
+</div>

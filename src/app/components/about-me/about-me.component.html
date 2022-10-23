@@ -1,0 +1,67 @@
+<app-modal #modalComponen>
+  <div
+    class="about bg-black text-white flex flex-col items-middle justify-center"
+  >
+    <div class="aboutcontent px-4 py-8">
+      <div>
+        <div class="shadow-lg">
+          <div class="about-img flex flex-col items-center pb-2">
+            <img
+              class="rounded-full w-44 h-44"
+              src="https://media-exp1.licdn.com/dms/image/C4E03AQG4S62dcQ3nzg/profile-displayphoto-shrink_800_800/0/1621192264975?e=1672272000&v=beta&t=nj_vWCg82gCm_zuPgs9WZfMjn8RVzCtpU052M9BKrkk"
+              alt="about image"
+            />
+          </div>
+        </div>
+
+        <h2 class="text-center text-3xl">Dmytro Poputnikov</h2>
+        <div class="w-full border-b-2 border-gray-200 my-3"></div>
+        <h3 class="text-center">Angular Developer</h3>
+      </div>
+    </div>
+
+    <ul class="icons">
+      <li>
+        <a
+          href="https://www.facebook.com/profile.php?id=100017152263749"
+          target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://github.com/dmytro-poputnikov" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/dmytro-poputnikov-056b44134/"
+          target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- <ng-container *ngTemplateOutlet="toolbar"></ng-container> -->
+</app-modal>
+
+<ng-template #toolbar>
+  <div class="py-3 px-4 flex justify-end bg-black">
+    <button
+      (click)="close()"
+      type="button"
+      class="rounded-md shadow-lg sm:tracking-wider mx-2 border border-gray-300 px-4 py-2 bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+    >
+      Close
+    </button>
+
+    <button
+      type="submit"
+      class="bg-yellow-300 hover:bg-yellow-400 text-black font-bold rounded-md shadow-lg sm:tracking-wider py-2 px-4"
+      [disabled]="newsletterForm.invalid"
+    >
+      Submit
+    </button>
+  </div>
+</ng-template>

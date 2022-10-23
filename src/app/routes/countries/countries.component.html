@@ -1,0 +1,14 @@
+<main>
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 h-full">
+    <div
+      class="px-4 py-6 sm:px-0 h-full flex flex-col justify-center items-top"
+    >
+      <h1 class="text-xl text-center sm:text-start font-semibold ml-0 sm:ml-48">
+        Region: {{ region | titlecase }}
+      </h1>
+      <div class="country-list-box flex-1 mt-6 w-full">
+        <app-country-list [region]="region"></app-country-list>
+      </div>
+    </div>
+  </div>
+</main>

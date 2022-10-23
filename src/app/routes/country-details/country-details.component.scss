@@ -1,0 +1,15 @@
+:host {
+  dl {
+    div {
+      @apply bg-gray-50 px-4 py-5 grid grid-cols-3 gap-4 sm:px-6;
+
+      dt {
+        @apply text-sm font-medium text-gray-500;
+      }
+
+      dd {
+        @apply mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0;
+      }
+    }
+  }
+}
