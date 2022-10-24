@@ -51,7 +51,7 @@ export class RegionsService {
 
     return this.http
       .get<Country[]>(
-        `${this.baseUrl}/region/${region}?fields=name,flags,translations,cca3,maps,currencies,population`
+        `${this.baseUrl}/region/${region}?fields=name,flags,translations,cca3,maps,currencies,population,capital`
       )
       .pipe(
         map((countries) => {

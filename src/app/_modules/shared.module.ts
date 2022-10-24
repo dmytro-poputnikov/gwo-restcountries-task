@@ -1,3 +1,4 @@
+import { LoadingComponent } from './../components/loading/loading.component';
 import { ShortNumberPipe } from './../_pipes/short-number.pipe';
 import { TagComponent } from './../components/tag/tag.component';
 import { NgModule } from '@angular/core';
@@ -23,6 +24,7 @@ const DECLARATIONS: any[] = [
   TagComponent,
   ShortNumberPipe,
   ReplaceWhiteSpacePipe,
+  LoadingComponent,
 ];
 
 @NgModule({

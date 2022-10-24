@@ -1,4 +1,12 @@
-# Gwo
+## About this project
+
+This project is a task [GWO - Gdańskie Wydawnictwo Oświatowe](https://gwo.pl/) for the recruitment process
+
+## Deployed at github page
+
+[Open Page](https://dmytro-poputnikov.github.io/gwo-restcountries-task/)
+
+## Angular version
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 

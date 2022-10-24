@@ -4,6 +4,7 @@ export interface Country {
   translations: Translations;
   cca3: string;
   population: number;
+  capital: String[];
   maps: {
     googleMaps: string;
     openStreetMaps: string;
